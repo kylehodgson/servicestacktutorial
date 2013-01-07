@@ -133,9 +133,6 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\AppHost.cs" />
-    <Compile Include="App_Start\PageBase.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
