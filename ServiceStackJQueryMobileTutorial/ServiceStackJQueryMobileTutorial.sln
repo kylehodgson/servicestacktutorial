@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackJQueryMobileTutorial", "ServiceStackJQueryMobileTutorial\ServiceStackJQueryMobileTutorial.csproj", "{550AF384-596A-4A7A-B0C2-C03B16D90C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStackJQueryMobileTutorial.Integration", "ServiceStackJQueryMobileTutorial.Integration\ServiceStackJQueryMobileTutorial.Integration.csproj", "{9A98504F-EFF8-4742-A472-8A5BC48B8514}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A37D608B-85E4-453C-8D7D-4B798F468628}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		ServiceStackJQueryMobileTutorial.vsmdi = ServiceStackJQueryMobileTutorial.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ServiceStackJQueryMobileTutorial.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{550AF384-596A-4A7A-B0C2-C03B16D90C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550AF384-596A-4A7A-B0C2-C03B16D90C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550AF384-596A-4A7A-B0C2-C03B16D90C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550AF384-596A-4A7A-B0C2-C03B16D90C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A98504F-EFF8-4742-A472-8A5BC48B8514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A98504F-EFF8-4742-A472-8A5BC48B8514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A98504F-EFF8-4742-A472-8A5BC48B8514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A98504F-EFF8-4742-A472-8A5BC48B8514}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
