@@ -4,7 +4,7 @@ using ServiceStackJQueryMobileTutorial.Repository;
 
 namespace ServiceStackJQueryMobileTutorial.Service
 {
-    public class EventsService : RestServiceBase<Event>
+    public class EventsService : RestServiceBase<EventRequest>
     {
         private EventRepository repository;
         public EventsService()
@@ -16,7 +16,7 @@ namespace ServiceStackJQueryMobileTutorial.Service
             repository = repo;
         }
 
-        public override object OnGet(Event request)
+        public override object OnGet(EventRequest request)
         {
             var list = repository.GetEvents();
             var output = new EventsResponse
