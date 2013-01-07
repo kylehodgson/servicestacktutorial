@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Runtime.Serialization;
-using ServiceStack.ServiceHost;
 
 namespace ServiceStackJQueryMobileTutorial.Model
 {  
