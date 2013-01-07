@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace ServiceStackJQueryMobileTutorial.Model
 {
     [DataContract]
-    public class EventsResponse
+    public class EventResponse
     {
         [DataMember]
         public IList<Event> EventListings { get; set; }

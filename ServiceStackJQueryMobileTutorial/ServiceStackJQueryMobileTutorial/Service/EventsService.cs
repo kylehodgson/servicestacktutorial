@@ -19,7 +19,7 @@ namespace ServiceStackJQueryMobileTutorial.Service
         public override object OnGet(EventRequest request)
         {
             var list = repository.GetEvents();
-            var output = new EventsResponse
+            var output = new EventResponse
             {
                 EventListings = list
             };

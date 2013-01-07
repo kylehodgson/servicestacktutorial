@@ -141,7 +141,7 @@
     </Compile>
     <Compile Include="Model\EventRequest.cs" />
     <Compile Include="Model\Event.cs" />
-    <Compile Include="Model\EventsResponse.cs" />
+    <Compile Include="Model\EventResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\EventRepository.cs" />
     <Compile Include="Service\EventsService.cs" />
