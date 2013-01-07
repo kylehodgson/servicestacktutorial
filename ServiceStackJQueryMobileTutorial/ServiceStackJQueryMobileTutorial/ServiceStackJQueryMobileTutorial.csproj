@@ -87,6 +87,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="app.html" />
     <Content Include="Content\js\ss-validation.js" />
     <Content Include="README.txt" />
     <Content Include="Styles\Site.css" />

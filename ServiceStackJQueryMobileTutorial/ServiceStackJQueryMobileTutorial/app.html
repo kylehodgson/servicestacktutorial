@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css"
+        />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Events
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul id="listview_events" data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Upcoming Events
+                    </li>
+                    <li data-theme="c">
+                        <a href="#" data-transition="slide">
+                            Button
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                </h3>
+            </div>
+        </div>
+        <script type="text/javascript">
+              $(document).ready(function () {
+
+    jQuery.getJSON("/events?format=json",
+
+        function (data) {
+
+            for (var idx in data.eventListings) {
+
+                var listing = data.eventListings[idx];
+                var date = new Date(parseInt(listing.eventStart.substr(6)));
+
+                $("#listview_events").append(
+                                        '<li data-theme="c">' + 
+                                        '<a href="#" data-transition="slide">' + listing.speaker
+                                        + ' presents ' + listing.subject + ' '
+                                        + date.toDateString()  + '</a></li>');
+            }
+
+            $("#listview_events").listview('refresh');
+        });
+});
+        </script>
+    </body>
+
+</html>
