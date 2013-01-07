@@ -8,6 +8,7 @@ using ServiceStack.ServiceInterface;
 using ServiceStack.ServiceInterface.Auth;
 using ServiceStack.ServiceInterface.ServiceModel;
 using ServiceStack.WebHost.Endpoints;
+using ServiceStackJQueryMobileTutorial.Repository;
 using ServiceStackJQueryMobileTutorial.Service;
 
 [assembly: WebActivator.PreApplicationStartMethod(typeof(ServiceStackJQueryMobileTutorial.App_Start.AppHost), "Start")]
@@ -46,7 +47,9 @@ namespace ServiceStackJQueryMobileTutorial.App_Start
 			//ConfigureAuth(container);
 
 			//Register all your dependencies
-			//container.Register(new TodoRepository());			
+			//container.Register(new TodoRepository());		
+
+            container.Register(new EventRepository());
 		}
 
 		/* Uncomment to enable ServiceStack Authentication and CustomUserSession
