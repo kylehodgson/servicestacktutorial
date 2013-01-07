@@ -1,20 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Runtime.Serialization;
+using ServiceStack.ServiceHost;
 
 namespace ServiceStackJQueryMobileTutorial.Model
 {
+    [DataContract]
+    [RestService("/events","GET")]
+    [RestService("/events/page/{Page}","GET")]
+    [RestService("/events/search/{SearchTerm}","GET")]
     public class Event
     {
-        public int? Page { get; set; }
-
-        public string SearchTerm { get; set; }
-
-        public DateTime EventStart { get; set; }
-
-        public string Speaker { get; set; }
-
+        [DataMember]
         public string Subject { get; set; }
+        [DataMember]
+        public DateTime EventDate { get; set; }
+        [DataMember]
+        public string Speaker { get; set; }
+        [DataMember]
+        public DateTime EventStart { get; set; }
     }
 }

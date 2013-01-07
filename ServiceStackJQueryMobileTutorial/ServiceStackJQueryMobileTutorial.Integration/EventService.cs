@@ -10,7 +10,7 @@ namespace ServiceStackJQueryMobileTutorial.Integration
         [TestMethod]
         public void CanIDownloadAListOfEvents()
         {
-            var request = new Events();
+            var request = new Event();
             var target = new EventsService();
             var actual = target.OnGet(request);
             Assert.IsNotNull(actual);
